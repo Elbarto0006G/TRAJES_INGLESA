@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras | Trajes Inglesa</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+    <script src="carrito.js" defer></script>
+</head>
+<body>
+<header>
+    <a class="logo" href="index.html">TRAJES INGLESA</a>
+    <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="confeccion.html">Confección</a>
+        <a href="galeria.html">Galería</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicio.html">Servicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="active cart-nav">🛒 Carrito <span class="cart-count" id="contador-carrito">0</span></a>
+    </nav>
+</header>
+
+<main class="cart-main">
+    <h1 class="page-title">Mi carrito de compras</h1>
+    <p class="cart-intro">Revisa los trajes seleccionados y verifica el total de tu pedido.</p>
+
+    <div class="cart-layout">
+        <section class="cart-box">
+            <h2>Productos seleccionados</h2>
+            <div id="cart-items"></div>
+        </section>
+
+        <aside class="cart-summary">
+            <h2>Resumen de compra</h2>
+            <div class="summary-line"><span>Cantidad de artículos</span><strong id="cart-quantity">0</strong></div>
+            <div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">Bs. 0,00</strong></div>
+            <div class="summary-line"><span>Envío</span><span>Por confirmar</span></div>
+            <div class="summary-total"><span>Total</span><strong id="cart-total">Bs. 0,00</strong></div>
+            <button class="checkout-btn" id="show-checkout" type="button">REALIZAR PEDIDO</button>
+            <p style="font-size:12px;color:#687486;margin-top:12px">El costo de envío se coordinará al confirmar el pedido.</p>
+
+            <form class="checkout-form" id="checkout-form" hidden>
+                <h3>Datos del comprador</h3>
+                <label>Nombre completo
+                    <input type="text" id="buyer-name" required placeholder="Tu nombre">
+                </label>
+                <label>Teléfono de contacto
+                    <input type="tel" id="buyer-phone" required placeholder="Tu número de teléfono">
+                </label>
+                <label>Observaciones (opcional)
+                    <textarea id="buyer-notes" placeholder="Talla, color u otra indicación"></textarea>
+                </label>
+                <button type="submit">CONFIRMAR PEDIDO</button>
+            </form>
+            <a href="galeria.html" style="display:inline-block;margin-top:18px;color:#8c7045;font-weight:bold">← Seguir comprando</a>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    © 2026 Trajes Inglesa | Elegancia y confección a tu medida
+</footer>
+</body>
+</html>

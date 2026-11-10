@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Trajes Inglesa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a class="logo" href="index.html">
+            TRAJES INGLESA
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="confeccion.html">Confección</a>
+            <a href="galeria.html">Galería</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicio.html">Servicio</a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <a href="carrito.html" class="cart-nav">🛒 Carrito <span class="cart-count" id="contador-carrito">0</span></a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1 class="page-title">
+            Contáctanos
+        </h1>
+
+        <p class="intro">
+            ¿Buscas un traje para una ocasión especial?
+            Escríbenos para solicitar información o consultar
+            nuestros servicios.
+        </p>
+
+        <div class="panel">
+
+            <form>
+
+                <label>
+                    Nombre
+                    <input
+                        required
+                        type="text"
+                        placeholder="Escribe tu nombre"
+                    >
+                </label>
+
+                <label>
+                    Correo electrónico
+                    <input
+                        required
+                        type="email"
+                        placeholder="tu correo"
+                    >
+                </label>
+
+                <label>
+                    Servicio de interés
+
+                    <select>
+                        <option>Confección de traje</option>
+                        <option>Traje de novio</option>
+                        <option>Traje clásico</option>
+                        <option>Esmoquin</option>
+                        <option>Ajustes y arreglos</option>
+                    </select>
+                </label>
+
+                <label>
+                    Mensaje
+                    <textarea
+                        required
+                        placeholder="Escribe tu consulta"
+                    ></textarea>
+                </label>
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    <section class="usuarios-registrados">
+        <h2>Usuarios registrados</h2>
+        <ul id="lista-usuarios"></ul>
+    </section>
+
+    </main>
+
+    <footer>
+        © 2026 Trajes Inglesa | Elegancia y confección a tu medida
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>

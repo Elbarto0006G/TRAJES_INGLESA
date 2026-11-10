@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Trajes Inglesa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a class="logo" href="index.html">
+            TRAJES INGLESA
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="confeccion.html">Confección</a>
+            <a href="galeria.html" class="active">Galería</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicio.html">Servicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html" class="cart-nav">🛒 Carrito <span class="cart-count" id="contador-carrito">0</span></a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1 class="page-title">
+            Nuestra galería
+        </h1>
+
+        <p class="intro">
+            Conoce algunos estilos que pueden inspirar tu próximo traje.
+        </p>
+
+        <div class="cards">
+
+            <article class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1598808503746-f34c53b9323e?auto=format&fit=crop&w=800&q=80"
+                    alt="Traje de novio"
+                >
+
+                <div class="pad">
+                    <h2>Trajes de novios</h2>
+
+                    <p>
+                        Estilos especiales para celebrar un día inolvidable.
+                    </p>
+                    <p class="product-price">Precio referencial: Bs. 950</p>
+                    <button class="add-cart-btn" type="button"
+                        data-id="traje-novio" data-name="Traje de novio"
+                        data-price="950"
+                        data-image="https://images.unsplash.com/photo-1598808503746-f34c53b9323e?auto=format&fit=crop&w=800&q=80">
+                        Agregar al carrito
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80"
+                    alt="Traje clásico"
+                >
+
+                <div class="pad">
+                    <h2>Trajes clásicos</h2>
+
+                    <p>
+                        Diseños atemporales para ocasiones formales y profesionales.
+                    </p>
+                    <p class="product-price">Precio referencial: Bs. 850</p>
+                    <button class="add-cart-btn" type="button"
+                        data-id="traje-clasico" data-name="Traje clásico"
+                        data-price="850"
+                        data-image="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80">
+                        Agregar al carrito
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80"
+                    alt="Esmoquin"
+                >
+
+                <div class="pad">
+                    <h2>Esmoquin</h2>
+
+                    <p>
+                        Una opción sofisticada para eventos de etiqueta.
+                    </p>
+                    <p class="product-price">Precio referencial: Bs. 1100</p>
+                    <button class="add-cart-btn" type="button"
+                        data-id="esmoquin" data-name="Esmoquin"
+                        data-price="1100"
+                        data-image="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80">
+                        Agregar al carrito
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Trajes Inglesa | Elegancia y confección a tu medida
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="carrito.js" defer></script>
+
+</body>
+</html>
